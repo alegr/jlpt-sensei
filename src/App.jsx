@@ -54,7 +54,7 @@ export default function App() {
         getCatPct={getCatPct}
         user={user} onSignOut={signOut} syncing={syncing}
       />
-      <main style={{ flex: 1, overflowY: 'auto', padding: 32, maxWidth: 960 }}>
+      <main style={{ flex: 1, overflowY: 'auto', padding: 32, maxWidth: 960, paddingBottom: 'max(32px, calc(56px + 16px))' }}>
         {screen === 'dashboard' && (
           <Dashboard level={level} getCatPct={getCatPct} getStatus={getStatus} setScreen={setScreen} setCurrentCat={setCurrentCat} />
         )}

@@ -37,6 +37,14 @@ body {
 button { font-family: inherit; cursor: pointer; }
 input  { font-family: inherit; }
 
+/* Mobile layout */
+@media (max-width: 767px) {
+  #root > div > main {
+    padding: 20px 16px 88px !important;
+    max-width: 100% !important;
+  }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
