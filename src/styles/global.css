@@ -1,0 +1,56 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:    #0f0f14;
+  --bg2:   #16161f;
+  --bg3:   #1e1e2a;
+  --bg4:   #26263a;
+  --accent:      #7f77dd;
+  --accent2:     #534ab7;
+  --accent-glow: #afa9ec;
+  --teal:        #1d9e75;
+  --teal-light:  #9fe1cb;
+  --coral:       #d85a30;
+  --coral-light: #f0997b;
+  --amber:       #ef9f27;
+  --amber-light: #fac775;
+  --text:  #e8e8f0;
+  --text2: #9898b0;
+  --text3: #5a5a78;
+  --border:  rgba(127,119,221,0.15);
+  --border2: rgba(127,119,221,0.3);
+  --card:  #1a1a26;
+  --card2: #20202e;
+  --r:   12px;
+  --rsm: 8px;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+button { font-family: inherit; cursor: pointer; }
+input  { font-family: inherit; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--bg4); border-radius: 4px; }
+
+/* Status badges */
+.badge {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.badge-mastered { background: rgba(29,158,117,0.18);  color: var(--teal-light);   border: 1px solid rgba(29,158,117,0.3); }
+.badge-progress { background: rgba(239,159,39,0.15);  color: var(--amber-light);  border: 1px solid rgba(239,159,39,0.25); }
+.badge-review   { background: rgba(216,90,48,0.15);   color: var(--coral-light);  border: 1px solid rgba(216,90,48,0.25); }
+.badge-pending  { background: rgba(90,90,120,0.15);   color: var(--text3);        border: 1px solid rgba(90,90,120,0.2); }
